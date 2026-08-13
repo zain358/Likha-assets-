@@ -1,0 +1,80 @@
+<img src={`https://cdn.simpleicons.org/${s.slug}/ffffff`} alt={s.name} width={18} height={18} />
+
+ {pointing ? (
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" style={{ transform: "translate(-6px, -2px)" }}>
+                    <path d="M9 11V5.5a1.5 1.5 0 013 0V11m0-1.5v-1a1.5 1.5 0 013 0V11m0-.5a1.5 1.5 0 013 0V15a5 5 0 01-5 5h-1.5a5 5 0 01-4.3-2.5l-1.6-2.8a1.4 1.4 0 012.2-1.7l1 1V7a1.5 1.5 0 013 0v4" fill="#ffffff" stroke="#3d5afe" strokeWidth="1.2" strokeLinejoin="round" />
+                </svg>
+            ) : (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style={{ transform: "translate(-2px, -2px)" }}>
+                    <path d="M5 3l14 8-6 1.5L9.5 18 5 3z" fill="#ffffff" stroke="#3d5afe" strokeWidth="1.5" strokeLinejoin="round" />
+                </svg>
+            )}
+
+const services = [
+  { n: "01", slug: "website-development", name: "Website Development", tag: "Web", price: "From ₱15,000", color: "#3d5afe", img: "/images/service-1.jpg", desc: "Fast, sharp sites built to convert visitors into customers." },
+  { n: "02", slug: "mobile-app-development", name: "Mobile App Development", tag: "iOS & Android", price: "From ₱80,000", color: "#d8613c", img: "/images/service-2.jpg", desc: "Apps that feel right and work right on real devices." },
+  { n: "03", slug: "system-development", name: "System Development", tag: "Platforms", price: "From ₱50,000", color: "#c7c7bf", img: "/images/service-3.jpg", desc: "Portals, dashboards, and workflows built around your team." },
+  { n: "04", slug: "video-editing", name: "Video Editing", tag: "Content", price: "From ₱5,000", color: "#17171a", img: "/images/service-4.jpg", desc: "Cinematic edits and motion content for your brand." },
+];
+
+const rows = [
+  { title: "We Learn Your Business First", desc: "Before we write a line of code, we sit with you. We ask the questions most agencies skip — what actually matters to your operations, not just what looks good on a homepage.", video: "/videos/why-1.mp4", poster: "/images/why-1.jpg" },
+  { title: "One Team. One Conversation.", desc: "No account managers relaying messages. No ticket systems. No waiting three days for a reply. You talk directly to the people building your project — every time.", video: "/videos/why-2.mp4", poster: "/images/why-2.jpg" },
+  { title: "Honest Scoping. Not Upselling.", desc: "Sometimes the answer is a simple website. Sometimes it's a full system. We'll tell you honestly which one — even when the simple answer means a smaller invoice for us.", video: "/videos/why-3.mp4", poster: "/images/why-3.jpg" },
+  { title: "It Works After We Leave", desc: "We don't build things that fall apart when the project ends. You own everything, you understand everything — and if you need us later, we're here.", video: "/videos/why-4.mp4", poster: "/images/why-4.jpg" },
+];
+
+const panels = [
+    { n: "01", title: "Discovery", desc: "We sit with you and learn your business, goals, and users before anything else." },
+    { n: "02", title: "Design", desc: "We craft the look and feel — clean, intentional, and built around your brand." },
+    { n: "03", title: "Build", desc: "We engineer it with a modern stack — fast, scalable, and yours to own." },
+    { n: "04", title: "Launch", desc: "We ship it, test it, and hand it off. You understand and control everything." },
+    { n: "05", title: "Support", desc: "Need us later? We're here — updates, fixes, and growth whenever you need." },
+];
+
+
+<button onClick={() => go(-1)} disabled={active === 0} data-cursor="hover" aria-label="Previous" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 text-white transition hover:border-accent hover:bg-white/5 disabled:opacity-30">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          </button>
+          <button onClick={() => go(1)} disabled={active === total - 1} data-cursor="hover" aria-label="Next" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 text-white transition hover:border-accent hover:bg-white/5 disabled:opacity-30">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          </button>
+
+const industries = [
+  { img: "/images/ind-1.jpg", tag: "Food & Beverage", name: "Restaurants & Cafés", desc: "Menus, reservations, and ordering that fill tables." },
+  { img: "/images/ind-2.jpg", tag: "Health", name: "Clinics & Wellness", desc: "Booking systems and sites patients actually trust." },
+  { img: "/images/ind-3.jpg", tag: "Beauty", name: "Salons & Studios", desc: "Online booking and a look that matches your brand." },
+  { img: "/images/ind-4.jpg", tag: "Education", name: "Schools & Training", desc: "Enrollment, portals, and learning platforms." },
+  { img: "/images/ind-5.jpg", tag: "Retail", name: "E-Commerce", desc: "Storefronts built to sell, fast and secure." },
+  { img: "/images/ind-6.jpg", tag: "Property", name: "Real Estate", desc: "Listings and virtual tours that close deals." },
+  { img: "/images/ind-7.jpg", tag: "Media", name: "Events & Creators", desc: "Landing pages and content that build a following." },
+  { img: "/images/ind-8.jpg", tag: "Trades", name: "Construction", desc: "Portfolios and lead systems that win projects." },
+  { img: "/images/ind-9.jpg", tag: "Tech", name: "Startups & SaaS", desc: "Products and platforms ready to scale." },
+];
+
+const industries = [
+  { img: "/images/ind-1.jpg", tag: "Food & Beverage", name: "Restaurants & Cafés", desc: "Menus, reservations, and ordering that fill tables." },
+  { img: "/images/ind-2.jpg", tag: "Health", name: "Clinics & Wellness", desc: "Booking systems and sites patients actually trust." },
+  { img: "/images/ind-3.jpg", tag: "Beauty", name: "Salons & Studios", desc: "Online booking and a look that matches your brand." },
+  { img: "/images/ind-4.jpg", tag: "Education", name: "Schools & Training", desc: "Enrollment, portals, and learning platforms." },
+  { img: "/images/ind-5.jpg", tag: "Retail", name: "E-Commerce", desc: "Storefronts built to sell, fast and secure." },
+  { img: "/images/ind-6.jpg", tag: "Property", name: "Real Estate", desc: "Listings and virtual tours that close deals." },
+  { img: "/images/ind-7.jpg", tag: "Media", name: "Events & Creators", desc: "Landing pages and content that build a following." },
+  { img: "/images/ind-8.jpg", tag: "Trades", name: "Construction", desc: "Portfolios and lead systems that win projects." },
+  { img: "/images/ind-9.jpg", tag: "Tech", name: "Startups & SaaS", desc: "Products and platforms ready to scale." },
+];
+
+const items = [
+  { src: "/images/1.jpg", span: "md:row-span-2", tag: "Website", title: "Clinic Booking Site", desc: "Design + build, 3 weeks." },
+  { src: "/images/2.jpg", span: "", tag: "Mobile App", title: "Delivery Tracker", desc: "Flutter, iOS & Android." },
+  { src: "/images/3.jpg", span: "", tag: "System", title: "Inventory Dashboard", desc: "Custom admin platform." },
+  { src: "/images/4.jpg", span: "md:row-span-2", tag: "Video", title: "Brand Launch Film", desc: "Edit + motion graphics." },
+  { src: "/images/5.jpg", span: "", tag: "Website", title: "Restaurant Site", desc: "Menu + reservations." },
+  { src: "/images/6.jpg", span: "", tag: "Video", title: "Event Highlights", desc: "Same-day edit." },
+];
+
+const steps = [
+  { n: "01", title: "Tell us your idea", desc: "Message us what you need — website, app, system, or video." },
+  { n: "02", title: "Get a plan & quote", desc: "We scope it honestly. No upselling, no surprises." },
+  { n: "03", title: "We build & launch", desc: "You get updates every step, and you own everything we ship." },
+];
